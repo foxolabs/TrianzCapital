@@ -1,4 +1,4 @@
-# sample
+# trianz
 
 > A Vue.js project
 

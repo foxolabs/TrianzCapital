@@ -7,11 +7,12 @@
             </div>
         </div>
 
-	  	<span for="menu-toggle" class="nav-toggle">
+	  	<label for="menu-toggle" class="nav-toggle">
 	      <span></span>
 	      <span></span>
 	      <span></span>
-	    </span>
+	    </label>
+      <input type="checkbox" id="menu-toggle" class="is-hidden"/>
   		<div class="nav-right nav-menu">
   			<div class="nav-item ">
   				<router-link to="/avendus">Avendus Difference</router-link>
@@ -68,7 +69,26 @@ export default {
 
 </script>
 
-<style lang='scss' scoped>
+<style scoped>/*
+// .nav-right .nav-item {
+//   margin-top: 4em;
+//   height: 3em;
+// }
+*/
+.nav-right .nav-item:hover{
+  background: white;
+}
+.nav-right .nav-item:hover a{
+  color : black;
+}
+
+@media screen and (max-width: 768px) {
+  #menu-toggle:checked + .nav-menu {
+    display: block;
+    background: transparent;
+  }
+
+}
 
 .nav {
     position: absolute;
@@ -76,9 +96,10 @@ export default {
     background:rgba(0, 0, 0, 0);
     height: 10em;
 }
-.nav-item a, a.nav-item {
+.nav-item a{
     color: #fefefe;
 }
+
 .nav-toggle {
     color: #fefefe;
     margin-top: 3em;
@@ -92,6 +113,4 @@ footer.footer {
   height: 30em;
   background: grey;
 }
-// @import "~/bulma/sass/utilities/_all"
-
 </style>

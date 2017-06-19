@@ -10,7 +10,7 @@
       </div>
     </section>
     
-    <div class="columns is-gapless has-text-centered">
+    <div class="columns has-text-centered">
       <div class="column vint">
         <div class="title">
           Value Investing
