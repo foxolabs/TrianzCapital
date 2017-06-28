@@ -1,13 +1,12 @@
 @import "~bulma/sass/utilities/_all";
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 // Set your colors
 $primary: #EF4144;
 $primary-invert: findColorInvert($primary);
-$twitter: #4099FF;
-$twitter-invert: findColorInvert($twitter);
-$family-primary: "Roboto" !default;
+
+$family-primary: "Open Sans";
 $body-size: 1.2rem;
-// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+
 $colors: (
     "white": ($white, $black),
     "black": ($black, $white),
@@ -18,13 +17,13 @@ $colors: (
     "success": ($success, $success-invert),
     "warning": ($warning, $warning-invert),
     "danger": ($danger, $danger-invert),
-    "twitter": ($twitter, $twitter-invert)
 );
 
 // Links
 $link: $primary;
-$link-invert: $primary-invert;
+$link-invert: #707070;
 $link-focus-border: $primary;
 
+$nav-height: 5em;
 // Import Bulma and Buefy styles
 @import "~bulma";

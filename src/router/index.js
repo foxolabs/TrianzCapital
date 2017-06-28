@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Pap from '@/components/Pap'
 import Alternative from '@/components/Alternative'
-import Avendus from '@/components/Avendus'
+import Difference from '@/components/Difference'
 import Contact from '@/components/Contact'
 
 Vue.use(Router)
@@ -24,8 +24,8 @@ export default new Router({
         component: Alternative
     },
     {
-        path: '/avendus',
-        component: Avendus
+        path: '/difference',
+        component: Difference
     },
     {
         path: '/contact',

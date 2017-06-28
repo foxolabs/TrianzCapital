@@ -1,5 +1,5 @@
 <template>
-  <div class="avendus">
+  <div class="difference">
     <div class="hero is-large top"></div>
     <h1>{{ msg }}</h1>
   </div>
@@ -7,10 +7,10 @@
 
 <script>
 export default {
-  name: 'avendus',
+  name: 'difference',
   data () {
     return {
-      msg: 'This is avendus'
+      msg: 'This is difference'
     }
   }
 }

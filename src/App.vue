@@ -1,48 +1,59 @@
 <template>
   <div id="app">
   	<nav class="nav">
+      <div class="container">
         <div class="nav-left">
+
+            <router-link to="/" class="image is-96x96">
+                  <img src="./assets/logo.png">
+            </router-link>
+        </div>
+    		<div class="nav-center">
+    			<div class="nav-item ">
+    				<router-link to="/difference">{{ name }} Difference</router-link>
+    			</div>
+    			<div class="nav-item ">
+    				<router-link to="/pap">Philosophy & Process</router-link>
+    			</div>
+    			<div class="nav-item ">
+    				<router-link to="/alternative">Alternative</router-link>
+    			</div>
+    		</div>
+        <div class="nav-right">
             <div class="nav-item">
-                <router-link to="/">Home</router-link>
+              <div class="icon"><i class="fa fa-facebook"></i></div>Like
+            </div>
+            <div class="nav-item">
+              <div class="icon"><i class="fa fa-twitter"></i></div>Tweet
+            </div>
+            <div class="nav-item">
+              <div class="icon"><i class="fa fa-pinterest"></i></div>Share
             </div>
         </div>
-
-	  	<label for="menu-toggle" class="nav-toggle">
-	      <span></span>
-	      <span></span>
-	      <span></span>
-	    </label>
-      <input type="checkbox" id="menu-toggle" class="is-hidden"/>
-  		<div class="nav-right nav-menu">
-  			<div class="nav-item ">
-  				<router-link to="/avendus">Avendus Difference</router-link>
-  			</div>
-  			<div class="nav-item ">
-  				<router-link to="/pap">Philosophy & Process</router-link>
-  			</div>
-  			<div class="nav-item ">
-  				<router-link to="/alternative">Alternative</router-link>
-  			</div>
-  			<div class="nav-item ">
-  				<router-link to="">Insights</router-link>
-  			</div>
-  			<div class="nav-item ">
-  				<router-link to="">Investors</router-link>
-  			</div>
-  		</div>
-	</nav>
+      </div>
+	  </nav>
     <router-view></router-view>
     <footer class="footer">
-        <div class="container has-text-centered">
-            <p class="subtitle"><router-link to="/avendus">{{ name }} Difference</router-link>&ensp;&ensp;<router-link to="/pap">Philosophy & Process</router-link>&ensp;&ensp;<router-link to="/alternative">Alternative</router-link>&ensp;&ensp;<router-link to="/contact">Contact</router-link></p>
-            <p>Security &ensp; Terms of Use &ensp; Privacy &ensp; Legal & Trademark Notices &ensp; About Us</p>
+      <div class="container">
+        <div class="content has-text-centered">
+          
+            <p>
+                <span class="icon is-large"><i class="fa fa-facebook"></i></span>&ensp;&ensp;
+                <span class="icon is-large"><i class="fa fa-twitter"></i></span>&ensp;&ensp;
+                <span class="icon is-large"><i class="fa fa-pinterest"></i></span>&ensp;&ensp;
+            </p>
+            &ensp;&ensp;
+            <br>
+            <p class="subtitle"><router-link to="/avendus">{{ name }} Difference</router-link>&ensp;&ensp;<router-link to="/pap">Philosophy & Process</router-link>&ensp;&ensp;<router-link to="/alternative">Alternative Investment</router-link>&ensp;&ensp;<router-link to="/contact">Contact</router-link></p>
+            <p class="subtitle is-8">Security &ensp; Terms of Use &ensp; Privacy &ensp; Legal & Trademark Notices &ensp; About Us</p>
+            <p></p>
+            <p class="subtitle is-8"> Bill Payment &ensp; Money Manger &ensp; Sitemap </p>
             <p>&ensp;</p>
-            <p>&ensp;</p>
-            <p>&ensp;</p>
-            <p>&ensp;</p>
-            <p>© 2017 {{ name }} Capitals, Inc. All rights reserved.</p>
-            <p> Terms, conditions, feature, availabilty, pricing, fees, service and support options subject to change without notice.</p>
+            <hr>
+            <p class="subtitle is-8">© 2017 {{ name }} Capitals, Inc. All rights reserved.</p>
+            <p class="subtitle is-8"> Terms, conditions, feature, availabilty, pricing, fees, service and support options subject to change without notice.</p>
         </div>
+      </div> 
     </footer>
   </div>
 </template>
@@ -69,48 +80,30 @@ export default {
 
 </script>
 
-<style scoped>/*
-// .nav-right .nav-item {
-//   margin-top: 4em;
-//   height: 3em;
-// }
-*/
-.nav-right .nav-item:hover{
-  background: white;
+<style scoped>
+.subtitle.is-8 {
+  font-size: 0.75rem;
 }
-.nav-right .nav-item:hover a{
-  color : black;
-}
-
-@media screen and (max-width: 768px) {
-  #menu-toggle:checked + .nav-menu {
-    display: block;
-    background: transparent;
-  }
-
-}
-
 .nav {
-    position: absolute;
-    width: 100%;
-    background:rgba(0, 0, 0, 0);
-    height: 10em;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  color: white;
 }
-.nav-item a{
-    color: #fefefe;
-}
-
-.nav-toggle {
-    color: #fefefe;
-    margin-top: 3em;
-}
-
-footer.footer {
-    background: #2d2d2d;
+.nav a {
     color: white;
 }
-.top {
-  height: 30em;
-  background: grey;
+.footer {
+  background:#2d2d2d;
+  color: white;
+}
+.footer a{
+  color: white;
+}
+p {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  
 }
 </style>
