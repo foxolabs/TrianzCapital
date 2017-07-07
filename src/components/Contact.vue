@@ -1,13 +1,12 @@
 <template>
   <div id="contact">
-  <div class="hero is-large top"></div>
-    <section class="hero has-text-centered">
+  <div class="hero is-medium top has-text-centered">
       <div class="hero-body">
         <div class="container">
-          <p class="title">Contact Us</p>
+          <p class="subitle lwhite">Contact Us</p>
         </div>
       </div>
-    </section>
+    </div>
     <section class="hero  has-text-centered">
       <div class="hero-body">
         <div class="container contact">
@@ -31,47 +30,47 @@
               </tr>
               <tr>
                 <td>
-                  <p class="control"><input class="input" type="email"></p>
+                  <p class="control"><input class="input" type="email" placeholder="Email Address"></p>
                 </td>
                 <td>
-                  <p class="control"><input class="input" type="text"></p>
+                  <p class="control"><input class="input" type="text" placeholder="Phone"></p>
                 </td>
               </tr>
               <tr>
                 <td colspan="2">
-                  <p class="control"><input class="input" type="text"></p>
+                  <p class="control"><input class="input" type="text" placeholder="Subject"></p>
                 </td>
               </tr>
               <tr>
                 <td colspan="2">
-                  <p class="control"><input class="input" type="text"></p>
+                  <p class="control"><input class="input" type="text" placeholder="Message"></p>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      
-    <div class="columns is-gapless has-text-centered">
-      <div class="column">
-        <div class="title">ADDRESS</div>
-        <div class="subitle">
-          
+
+        <div class="columns is-gapless has-text-centered">
+          <div class="column">
+            <div class="title">ADDRESS</div>
+            <div class="subitle">
+
+            </div>
+          </div>
+          <div class="column">
+            <div class="title">EMAIL</div>
+            <div class="subitle">
+              info@gmail.com
+            </div>
+          </div>
+          <div class="column">
+            <div class="title">CALL US</div>
+            <div class="subitle">
+              +1-917-775-0093 (USA)
+            </div>
+          </div>
         </div>
       </div>
-      <div class="column">
-        <div class="title">EMAIL</div>
-        <div class="subitle">
-          info@gmail.com
-        </div>
-      </div>
-      <div class="column">
-        <div class="title">CALL US</div>
-        <div class="subitle">
-          +1-917-775-0093 (USA)
-        </div>
-      </div>
-    </div>
-    </div>
     </section>
     <section class="hero is-medium has-text-centered">
       <div class="hero-body">
@@ -87,27 +86,31 @@
 </template>
 
 <script>
-export default {
-  name: 'contact',
-  data () {
-    return {
-      name: 'Trianz'
+  export default {
+    name: 'contact',
+    data () {
+      return {
+        name: 'Trianz'
+      }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-  color: black;
-}
-.top {
-  height: 30em;
-  background: grey;
-}
-.title {
-  color: primary-color;
-}
+  h1, h2 {
+    font-weight: normal;
+    color: black;
+  }
+  .top {
+    background-image: url("../assets/9111.png");
+    background-size: cover;
+  }
+  .title {
+    color: primary-color;
+  }
+  .lwhite {
+    color: white;
+  }
+
 </style>
