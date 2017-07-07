@@ -1,11 +1,11 @@
 <template>
   <div class="alternative">
-    <section class="hero is-large has-text-centered top">
+    <section class="hero is-medium has-text-centered top">
       <div class="hero-body">
         <div class="container">
-          <div class="title is-2">Alternative Investment</div>
+          <div class="title is-2 lwhite">Alternative Investment</div>
           <br>
-          <div class="subtitle is-6">Under Alternative Investments, Trianz Capital has invested in private equity, real estate, start-ups, commodities and precious metals, financial transactions.</div>
+          <div class="subtitle is-6 lwhite">Under Alternative Investments, Trianz Capital has invested in private equity, real estate, start-ups, commodities and precious metals, financial transactions.</div>
         </div>
       </div>
     </section>
@@ -58,8 +58,8 @@
     color: black;
   }
   .top {
-    height: 30em;
-    background: grey;
+    background: url('../assets/90.png');
+    background-size: cover;
   }
   .aTitle {
     color: #c50404;
@@ -72,5 +72,8 @@
   }
   li {
     text-align: left;
+  }
+  .lwhite {
+    color: white;
   }
 </style>

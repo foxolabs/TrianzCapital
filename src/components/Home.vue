@@ -213,10 +213,12 @@ h1, h2 {
 }
 .red {
   background: url('../assets/1.png');
+  background-size: cover;
   padding: 5em;
 }
 .bl {
   background: url('../assets/2.png');
+  background-size: cover;
   padding: 5em;
 }
 .green {

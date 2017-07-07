@@ -1,39 +1,42 @@
 <template>
   <div class="pap">
-    <div class="hero is-large top has-text-centered">
+    <div class="hero is-medium top has-text-centered">
       <div class="hero-body">
         <div class="container">
-          <div class="title is-4">Philosophy and Success</div>
+          <div class="title is-4 lwhite">Philosophy and Success</div>
           <br>
-          <p class="subtitle is-6"> Driven by a singular goal to help investors pursue their long-term investments objectives, Trianz Capital has scoured the globe for attractively price companies since the firm's founding in Asia in 1964. </p>
+          <p class="subtitle is-6 lwhite"> Driven by a singular goal to help investors pursue their long-term investments objectives, Trianz Capital has scoured the globe for attractively price companies since the firm's founding in Asia in 1964. </p>
         </div>
       </div>
     </div>
-
-          <div class="columns has-text-centered">
-            <div class="column lfirst lgreen">
-              <div class=" title is-4 lwhite">A Pioneer in Global Value Investing</div>
-              <br>
-              <div class="subtitle is-6 lwhite">Driven by a singualr goal to help investors pusue their long-term investment objectives, Trianz Capotial has scoured the globe for attractively proiced companies since the firm founding in Asia in 1964. Trianz Caoptial was amoung the first investment firms to invest globally using a value approach</div>
-            </div>
-            <div class="column lfirst lcyan">
-              <div class="title is-4 lwhite">Inspired by the pursuit of Value-Driven Growth Potential</div>
-              <br>
-              <div class="subtitle is-6 lwhite">Finding value for client inspires Trianz Caoptal just as much today as did twhen we started more than 50years afa. After navigating five decades of market ebbs and flows, we continue to believe true value investing is the only way toseek meaningful, longterm growth potential for our clients.</div>
-            </div>
-            <div class="column lfirst lviolet">
-              <div class="title is-4 lwhite">Invested in Our Strategies Aongside Our Clients</div>
-              <br>
-              <div class="subtitle is-6 lwhite">We have a long-established culture of investing alongside of out clients. Our Co-investment Guidelines ensure that our leadership's financial interests are aligned with those of our clients by requiring that all members of firm's various Investment Committees maintain meaniful personal investments in Avendus startegies, especially in those they co-manage.</div>
-            </div>
-          </div>
-        
+    <div class="hero is-medium">
+      <div class="columns has-text-centered">
+        <div class="column lfirst lgreen">
+          <div class=" title is-4 lwhite">A Pioneer in Global Value Investing</div>
+          <br>
+          <div class="subtitle is-6 lwhite">Driven by a singualr goal to help investors pusue their long-term investment objectives, Trianz Capotial has scoured the globe for attractively proiced companies since the firm founding in Asia in 1964. Trianz Caoptial was amoung the first investment firms to invest globally using a value approach</div>
+        </div>
+        <div class="column lfirst lcyan">
+          <div class="title is-4 lwhite">Inspired by the pursuit of Value-Driven Growth Potential</div>
+          <br>
+          <div class="subtitle is-6 lwhite">Finding value for client inspires Trianz Caoptal just as much today as did twhen we started more than 50years afa. After navigating five decades of market ebbs and flows, we continue to believe true value investing is the only way toseek meaningful, longterm growth potential for our clients.</div>
+        </div>
+        <div class="column lfirst lviolet">
+          <div class="title is-4 lwhite">Invested in Our Strategies Aongside Our Clients</div>
+          <br>
+          <div class="subtitle is-6 lwhite">We have a long-established culture of investing alongside of out clients. Our Co-investment Guidelines ensure that our leadership's financial interests are aligned with those of our clients by requiring that all members of firm's various Investment Committees maintain meaniful personal investments in Avendus startegies, especially in those they co-manage.</div>
+        </div>
+      </div>
+    </div>
     <div class="hero has-text-centered">
       <div class="hero-body">
         <div class="container">
           <p class="subtitle is-4">As of June 30, 2016, Trianz empoyees and parterns had 32$ million invested in various Trianz strategies. </p>
         </div>
       </div>
+    </div>
+    <div class="image">
+      <img src="../assets/91.png">
     </div>
     <div class="hero is-medium has-text-centered">
       <div class="hero-body">
@@ -138,10 +141,15 @@
             <li>
               A Rigorous Sell Discipline: designed to capture upside potential and prune portfolio laggards
             </li>
-          </ul> 
+          </ul>
+          <br>
+          <div class="image">
+            <img src="../assets/92.png">
+          </div> 
         </div>
       </div>
     </div>
+
     <div class="columns has-text-centered">
       <div class="column lyellow">
         <div class="title is-4">
@@ -181,9 +189,8 @@
     color: black;
   }
   .top {
-    height: 30em;
-
-    background: grey;
+    background: url('../assets/90.png');
+    background-size: cover;
   }
   .rTitle {
     color: #c50404;

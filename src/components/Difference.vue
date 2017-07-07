@@ -1,11 +1,11 @@
 <template>
   <div class="difference">
-    <div class="hero is-large top has-text-centered">
+    <div class="hero is-medium top has-text-centered">
       <div class="hero-body">
         <div class="container">
-          <div class="title is-4">We are Pioneers in GLOBAL Value investing</div>
+          <div class="title is-4 lwhite">We are Pioneers in GLOBAL Value investing</div>
           <br>
-          <p class="subtitle is-6"> We are a nimble boutique hedge fund with streamlined infromation flow which enhances our timely decision making. We consistently strive to be the best, not the biggest. </p>
+          <p class="subtitle is-6 lwhite"> We are a nimble boutique hedge fund with streamlined infromation flow which enhances our timely decision making. We consistently strive to be the best, not the biggest. </p>
         </div>
       </div>
     </div>
@@ -21,7 +21,11 @@
       <div class="hero-body">
         <div class="container">
           <div class="columns">
-            <div class="column is-one-third">IMG</div>
+            <div class="column is-one-third">
+              <div class="container">
+                <img src="../assets/000.png">
+              </div>
+            </div>
             <div class="column">
               <div class="hero">
                 <div class="hero-body">
@@ -40,10 +44,18 @@
                 </div>
               </div>
             </div>
-            <div class="column is-one-third">IMG</div>
+            <div class="column is-one-third">
+              <div class="container">
+                <img src="../assets/87.png">
+              </div>
+            </div>
           </div>  
           <div class="columns">
-            <div class="column is-one-third">IMG</div>
+            <div class="column is-one-third">
+              <div class="container">
+                <img src="../assets/98.png">
+              </div>
+            </div>
             <div class="column">
               <div class="hero">
                 <div class="hero-body">
@@ -94,11 +106,14 @@
     color: black;
   }
   .top {
-    height: 30em;
-    background: grey;
+    background: url('../assets/56.png');
+    background-size: cover;
   }
   .grey {
     background-color: #f5f5f5;
+  }
+  .lwhite {
+    color: white;
   }
 
 </style>
