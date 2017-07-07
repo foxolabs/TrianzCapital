@@ -3,20 +3,19 @@
   	<nav class="nav">
       <div class="container">
         <div class="nav-left">
-
             <router-link to="/" class="image is-96x96">
                   <img src="./assets/logo.png">
             </router-link>
         </div>
     		<div class="nav-center">
     			<div class="nav-item ">
-    				<router-link to="/difference">{{ name }} Difference</router-link>
+    				<router-link class="lwhite" to="/difference">{{ name }} Difference</router-link>
     			</div>
     			<div class="nav-item ">
-    				<router-link to="/pap">Philosophy & Process</router-link>
+    				<router-link class="lwhite" to="/pap">Philosophy & Process</router-link>
     			</div>
     			<div class="nav-item ">
-    				<router-link to="/alternative">Alternative</router-link>
+    				<router-link class="lwhite" to="/alternative">Alternative</router-link>
     			</div>
     		</div>
         <div class="nav-right">
@@ -93,6 +92,9 @@ export default {
 .nav a {
     color: white;
 }
+.nav-item a:not(.button) {
+  color: white;
+}
 .footer {
   background:#2d2d2d;
   color: white;
@@ -105,5 +107,8 @@ p {
 }
 @media screen and (max-width: 768px) {
   
+}
+.lwhite {
+  color: white;
 }
 </style>
