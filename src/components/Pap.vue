@@ -44,10 +44,10 @@
         </div>
       </div>
     </div>
-    <div class="hero has-text-centered">
+    <div class="hero has-text-centered dark">
       <div class="hero-body">
         <div class="container">
-          <p class="subtitle">We believe that displined value investing, built on a research-driven foundation, can deliver investment success over time. Promising oppportunity can be found amoung securities that are most deeply undervalued relative to their future earingins potential. </p>
+          <p>We believe that displined value investing, built on a research-driven foundation, can deliver investment success over time. Promising oppportunity can be found amoung securities that are most deeply undervalued relative to their future earingins potential. </p>
         </div>
       </div>
     </div>
