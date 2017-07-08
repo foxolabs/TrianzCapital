@@ -20,9 +20,9 @@
     <div class="hero">
       <div class="hero-body">
         <div class="container">
-          <div class="columns">
+          <div class="columns is-mobile">
             <div class="column is-one-third">
-              <div class="container">
+              <div class="image">
                 <img src="../assets/000.png">
               </div>
             </div>
@@ -35,7 +35,7 @@
               </div>
             </div>
           </div>
-          <div class="columns">
+          <div class="columns is-mobile">
             <div class="column">
               <div class="hero">
                 <div class="hero-body">
@@ -45,14 +45,14 @@
               </div>
             </div>
             <div class="column is-one-third">
-              <div class="container">
+              <div class="image">
                 <img src="../assets/87.png">
               </div>
             </div>
           </div>  
-          <div class="columns">
+          <div class="columns is-mobile">
             <div class="column is-one-third">
-              <div class="container">
+              <div class="image">
                 <img src="../assets/98.png">
               </div>
             </div>
@@ -115,5 +115,4 @@
   .lwhite {
     color: white;
   }
-
 </style>
