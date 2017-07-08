@@ -14,13 +14,13 @@
       <div id="navMenuExample" class="navbar-menu" v-bind:class="{ 'is-active': isActive }">
         <div class="navbar-end">
           <div class="navbar-item">
-            <router-link class="lwhite" to="/difference">{{ name }} Difference</router-link>
+            <router-link class="lwhite" to="/difference"><div v-on:click="ham">{{ name }} Difference</div></router-link>
           </div>
           <div class="navbar-item ">
-            <router-link class="lwhite" to="/pap">Philosophy & Process</router-link>
+            <router-link class="lwhite" to="/pap"><div v-on:click="ham">Philosophy & Process</div></router-link>
           </div>
           <div class="navbar-item ">
-            <router-link class="lwhite" to="/alternative">Alternative</router-link>
+            <router-link class="lwhite" to="/alternative"><div v-on:click="ham">Alternative</div></router-link>
           </div>
           <div class="navbar-item">
             <div class="icon"><i class="fa fa-facebook"></i></div>Like
