@@ -2,7 +2,7 @@
   <div id="app">
   	<nav class="navbar">
       <div class="navbar-brand">
-        <router-link to="/" class="image is-96x96">
+        <router-link to="/" class="image is-96x96 is-62">
           <img src="./assets/logo.png">
         </router-link>
         <div class="navbar-burger burger" data-target="navMenuExample" v-on:click="ham" v-bind:class="{ 'is-active': isActive }">
@@ -14,13 +14,13 @@
       <div id="navMenuExample" class="navbar-menu" v-bind:class="{ 'is-active': isActive }">
         <div class="navbar-end">
           <div class="navbar-item">
-            <router-link class="lwhite" to="/difference"><div v-on:click="ham">{{ name }} Difference</div></router-link>
+            <router-link class="lwhite" to="/difference"><div v-on:click="sclose">{{ name }} Difference</div></router-link>
           </div>
           <div class="navbar-item ">
-            <router-link class="lwhite" to="/pap"><div v-on:click="ham">Philosophy & Process</div></router-link>
+            <router-link class="lwhite" to="/pap"><div v-on:click="sclose">Philosophy & Process</div></router-link>
           </div>
           <div class="navbar-item ">
-            <router-link class="lwhite" to="/alternative"><div v-on:click="ham">Alternative</div></router-link>
+            <router-link class="lwhite" to="/alternative"><div v-on:click="sclose">Alternative</div></router-link>
           </div>
           <div class="navbar-item">
             <div class="icon"><i class="fa fa-facebook"></i></div>Like
@@ -46,7 +46,11 @@
           </p>
           &ensp;&ensp;
           <br>
-          <p class="subtitle"><router-link to="/avendus"><span v-on:click="scroll">{{ name }} Difference</span></router-link>&ensp;&ensp;<router-link to="/pap">Philosophy & Process</router-link>&ensp;&ensp;<router-link to="/alternative">Alternative Investment</router-link>&ensp;&ensp;<router-link to="/contact">Contact</router-link></p>
+          <p class="subtitle">
+            <router-link to="/difference"><span v-on:click="() => { scroll(); sclose(); }">{{ name }} Difference</span></router-link>&ensp;&ensp;
+            <router-link to="/pap"><span v-on:click="() => { scroll(); sclose(); }">Philosophy & Process</span></router-link>&ensp;&ensp;
+            <router-link to="/alternative"><span v-on:click="() => { scroll(); sclose(); }">Alternative Investment</span></router-link>&ensp;&ensp;
+            <router-link to="/contact" ><span v-on:click="() => { scroll(); sclose(); }">Contact</span></router-link></p>
           <p class="subtitle is-8">Security &ensp; Terms of Use &ensp; Privacy &ensp; Legal & Trademark Notices &ensp; About Us</p>
           <p></p>
           <p class="subtitle is-8"> Bill Payment &ensp; Money Manger &ensp; Sitemap </p>
@@ -71,14 +75,20 @@
     },
     methods: {
       scroll: function (ev) {
+        window.scrollTo( 0, 0 );
       },
       ham: function (ev) {
+        console.log(this.isActive);
         if(this.isActive) {
           this.isActive=false;
         } else {
           this.isActive=true;
         }
-
+      },
+      sclose: function (ev) {
+        console.log(this.isActive);
+        if(this.isActive)
+          this.isActive = false;
       }
     }
   }
@@ -99,7 +109,7 @@
     color: white;
   }
   .navbar-end {
-    margin-top: 1em;
+    margin-top: 2em;
   }
   .navbar-item {
     color: white;
@@ -115,7 +125,7 @@
     color: white;
   }
   .navbar-brand {
-      width: 100%;
+    width: 100%;
   }
   @media screen and (max-width: 768px) {
     .navbar {
@@ -127,12 +137,12 @@
       color: black;
     }
     .navbar-end {
-    margin-top: 0;
-  }
+      margin-top: 0;
+    }
     .navbar-item a {
       color: black;
     }
-    .is-96x96 {
+    .is-62 {
       width: 62px;
       height: 62px;
     }
