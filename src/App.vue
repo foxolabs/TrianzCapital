@@ -78,7 +78,6 @@
         window.scrollTo( 0, 0 );
       },
       ham: function (ev) {
-        console.log(this.isActive);
         if(this.isActive) {
           this.isActive=false;
         } else {
@@ -86,7 +85,6 @@
         }
       },
       sclose: function (ev) {
-        console.log(this.isActive);
         if(this.isActive)
           this.isActive = false;
       }
