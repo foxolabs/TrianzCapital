@@ -23,13 +23,13 @@
             <router-link class="lwhite" to="/alternative"><div v-on:click="sclose">Alternative</div></router-link>
           </div>
           <div class="navbar-item">
-            <div class="icon"><i class="fa fa-facebook"></i></div>Like
+            <div class="icon"><a href="https://www.facebook.com/Trianz-Capital-1564784410252115/"><i class="fa fa-facebook"></i></div>Like</a>
           </div>
           <div class="navbar-item">
-            <div class="icon"><i class="fa fa-twitter"></i></div>Tweet
+            <div class="icon"><a href="https://twitter.com/trianzcapital"><i class="fa fa-twitter"></i></div>Tweet</a>
           </div>
           <div class="navbar-item">
-            <div class="icon"><i class="fa fa-pinterest"></i></div>Share
+            <div class="icon"><a href="https://in.pinterest.com/trianzcapital/"><i class="fa fa-pinterest"></i></div>Share</a>
           </div>
         </div>
       </div>
@@ -40,9 +40,9 @@
         <div class="content has-text-centered">
 
           <p>
-            <span class="icon is-large"><i class="fa fa-facebook"></i></span>&ensp;&ensp;
-            <span class="icon is-large"><i class="fa fa-twitter"></i></span>&ensp;&ensp;
-            <span class="icon is-large"><i class="fa fa-pinterest"></i></span>&ensp;&ensp;
+            <span class="icon is-large"><a href="https://www.facebook.com/Trianz-Capital-1564784410252115/"><i class="fa fa-facebook"></i></a></span>&ensp;&ensp;
+            <span class="icon is-large"><a href="https://twitter.com/trianzcapital"><i class="fa fa-twitter"><i class="fa fa-twitter"></i></a></span>&ensp;&ensp;
+            <span class="icon is-large"><a href="https://in.pinterest.com/trianzcapital/"><i class="fa fa-pinterest"></i></a></span>&ensp;&ensp;
           </p>
           &ensp;&ensp;
           <br>

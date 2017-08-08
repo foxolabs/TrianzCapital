@@ -3,9 +3,9 @@
     <section class="hero is-large has-text-centered">
       <div class="hero-body top mul">
         <div class="container">
-          <p class="title is-2"> Its all comming together</p>
+          <p class="title is-2"> Its all coming together</p>
           <p></p>
-          <p class="subtitle">When you're on top your monry, life is good. We help you effortlessly manage your finance in one place</p>
+          <p class="subtitle">When you're on top your money and life is good. We help you effortlessly manage your finance in one place</p>
         </div>
       </div>
     </section>
