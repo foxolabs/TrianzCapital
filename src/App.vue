@@ -23,13 +23,13 @@
             <router-link class="lwhite" to="/alternative"><div v-on:click="sclose">Alternative</div></router-link>
           </div>
           <div class="navbar-item">
-            <div class="icon"><a href="https://www.facebook.com/Trianz-Capital-1564784410252115/"><i class="fa fa-facebook"></i>Like</a></div>
+            <a href="https://www.facebook.com/Trianz-Capital-1564784410252115/"><i class="fa fa-facebook"></i>&ensp;Like</a>
           </div>
           <div class="navbar-item">
-            <div class="icon"><a href="https://twitter.com/trianzcapital"><i class="fa fa-twitter"></i>Tweet</a></div>
+            <a href="https://twitter.com/trianzcapital"><i class="fa fa-twitter"></i>&ensp;Tweet</a>
           </div>
           <div class="navbar-item">
-            <div class="icon"><a href="https://in.pinterest.com/trianzcapital/"><i class="fa fa-pinterest"></i>Share</a></div>
+            <a href="https://in.pinterest.com/trianzcapital/"><i class="fa fa-pinterest"></i>&ensp;Share</a>
           </div>
         </div>
       </div>
@@ -153,5 +153,8 @@
   }
   .lwhite {
     color: white;
+  }
+  .fa {
+  	vertical-align: middle;
   }
 </style>
